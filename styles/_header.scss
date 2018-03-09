@@ -1,0 +1,18 @@
+//---------------------------
+//           Header
+//---------------------------
+
+
+header {
+    // center wrapper in header
+    display: flex;
+    align-items: center;
+    min-height: 58px;
+
+    .wrapper {
+        // put content on left and right
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

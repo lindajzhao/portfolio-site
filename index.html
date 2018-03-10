@@ -5,91 +5,118 @@
 	<title>Linda Zhao | Front End Developer</title>
 	<link rel="stylesheet" type="text/css" href="./styles/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src='https://use.fontawesome.com/8d93889061.js'></script>
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
 
 </head>
 <body>
 	<header>
 		<div class="wrapper">
-			<h1>Linda Zhao</h1>
+			<h1 class="logo">
+				<img src="/assets/cursive-l-logo.svg" alt="Linda Zhao personal logo, a cursive L" class="logo">
+			</h1>
 			<nav class="mainNav">
 				<a href="#" class="link__mainNav">Home</a>
 				<a href="#portfolio" class="link__mainNav">Portfolio</a>
 				<a href="#contact" class="link__mainNav">Contact</a>
 			</nav>
 		</div>
-
 	</header>
 
 	<main>
 		<section class="hero">
-			<div class="wrapper">
+			<div class="heroWrapper">
 				<h2 class="heading__hero">Linda Zhao</h2>
-				<h3 class="text__hero">Front-End Web Dev</h3>
+				<h3 class="text__hero">Front-End JavaScript Developer</h3>
 				<a href="#portfolio" class="link__ul">See Portfolio</a>
 			</div>
 		</section>
 
-		<section class="about light">
+		<section class="about">
 			<div class="aboutDesc">
 				<h2 class="heading__section">About Me</h2>
-				<p class="text__reg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, alias, magni neque unde temporibus nam modi totam minima sed quidem veniam ab deserunt voluptates dolor aspernatur. Vel aspernatur culpa incidunt distinctio debitis architecto non odio ratione fugit velit laudantium accusamus, repellendus dolores recusandae magnam magni est omnis ipsam vero veritatis?</p>
-				<a href="#portfolio" class="link__ul">See Portfolio</a>
+				<p class="text__reg">My goal is to build products that can make someone's life easier and happier. I love creating memorable and useful applications
+				using the latest tools and techniques. I thrive in cross-discipline teams that focus on passion and creativity.</p>
+				<p class="text__reg">I am excited to be in a field with never ending learning opportunities.</p>
+				<a href="#socialSection" class="link__ul btn--cta">Let's Talk!</a>
 			</div>
-			<img src="./assets/headshot.jpeg" alt="headshot" class="headshot">
+			<img src="./assets/headshot.jpg" alt="headshot" class="headshot">
 		</section>
 
-		<section class="skills">
+		<section class="skills" id="skills">
 			<div class="wrapper">
 				<h2 class="heading__section">Skills</h2>
 				<div class="skillBoxWrap">
 					<div class="skillBox">
-						<i class="devicon-html5-plain devicon"></i>
-						<h4 className="heading__skillBox">HTML</h4>
+						<i class="devicon-javascript-plain colored devicon"></i>
+						<h4 className="heading__skillBox">JavaScript</h4>
 					</div>
 					<div class="skillBox">
-						<i class="devicon-html5-plain-wordmark devicon"></i>
-						<h4 className="heading__skillBox">CSS</h4>
+						<i class="devicon-jquery-plain colored devicon"></i>
+						<h4 className="heading__skillBox">jQuery</h4>
 					</div>
 					<div class="skillBox">
-						<i class="devicon-html5-plain-wordmark devicon"></i>
+						<i class="devicon-react-original colored devicon"></i>
 						<h4 className="heading__skillBox">React</h4>
 					</div>
 					<div class="skillBox">
-						<i class="devicon-html5-plain-wordmark devicon"></i>
-						<h4 className="heading__skillBox">JavsScript</h4>
+						<i class="devicon-html5-plain colored devicon"></i>
+						<h4 className="heading__skillBox">HTML</h4>
 					</div>
 					<div class="skillBox">
-						<i class="devicon-html5-plain-wordmark devicon"></i>
-						<h4 className="heading__skillBox">jQuery</h4>
+						<i class="devicon-css3-plain colored devicon"></i>
+						<h4 className="heading__skillBox">CSS</h4>
 					</div>
-					<!-- <p>github, gulp, node, sketch, react, sass, vscode, sublime, babel, firebase, git ,terminal</p>
-					currently learning
-					skills and tools -->
+					<div class="skillBox">
+						<i class="devicon-sass-plain colored devicon"></i>
+						<h4 className="heading__skillBox">SASS</h4>
+					</div>
+					<div class="skillBox">
+						<i class="devicon-github-plain colored devicon"></i>
+						<h4 className="heading__skillBox">Github</h4>
+					</div>
+					<div class="skillBox">
+						<i class="devicon-gulp-plain colored devicon"></i>
+						<h4 className="heading__skillBox">Gulp</h4>
+					</div>
+					<div class="skillBox">
+						<img src="/assets/logo-firebase.svg" alt="Firebase icon" class="devicon devicon--img">
+						<h4 className="heading__skillBox">Firebase</h4>
+					</div>
+					<div class="skillBox">
+						<img src="/assets/logo-sketch.svg" alt="Firebase icon" class="devicon devicon--img sketch-icon">
+						<h4 className="heading__skillBox">Sketch</h4>
+					</div>
+					<!-- <p>github,, sketch, , sass, firebase, gulp</p>
+					<p>currently learning (later maybe)</p> -->
 
 				</div>
 			</div> 
 			
 		</section>
 
-		<section class="portfolio">
+		<section class="portfolio" id="portfolio">
 			<div class="wrapper">
 				<h2 class="heading__section">Recent Work</h2>
 				
 				<div class="work1 workCard">
 					<div class="work__text">
-						<h3 class="heading__work">Over</h3>
+						<h4 class="workName">Over E-commerce Theme</h4>
+						<h3 class="workType">PSD to HTML/CSS Responsive Site</h3>
 						<div class="work__description">
+							<p class="text__reg">A responsive one-page website developed from a PSD mockup. I was responsible for designing the responsive view to provide the full experience for mobile users.</p>
 							<div class="workTags">
-								<h4 class="heading__work__subtitle">PSD Conversion</h4>
-								<h4 class="heading__work__subtitle">Responsive</h4>
-								<h4 class="heading__work__subtitle">HTML5</h4>
-								<h4 class="heading__work__subtitle">CSS3</h4>
-								<h4 class="heading__work__subtitle">CSS Grid</h4>
+								<h4 class="tag">Responsive</h4>
+								<h4 class="tag">HTML5</h4>
+								<h4 class="tag">SASS</h4>
+								<h4 class="tag">CSS3</h4>
+								<h4 class="tag">CSS Grid</h4>
 							</div>
-							<p class="text__reg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi dolorem id laborum autem, ut possimus rerum dicta tempore blanditiis asperiores nobis aperiam repellendus, delectus vel totam esse quae laboriosam quis. </p>
-							
-							<p class="text__reg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, ullam expedita. Ea, harum hic sint laboriosam perspiciatis aspernatur neque omnis molestias, quaerat in eligendi! Iusto eos expedita impedit aspernatur sit!</p>
+						</div>
+						<div class="buttonBox">
+							<a href="http://lindazhao.com/over/" class="btn--live">Live Site</a>
+							<a href="#" class="btn--cta">More Info</a>
 						</div>
 					</div>
 					<div class="work__image">
@@ -99,20 +126,21 @@
 	
 				<div class="work2 workCard">
 					<div class="work__text">
-						<h3 class="heading__work">Over</h3>
+						<h4 class="workName">Pitstop</h4>
+						<h3 class="workType">jQuery & Google API App</h3>
 						<div class="work__description">
+							<p class="text__reg">An app to find restaurant during a road trip. My partner and I used the Google Places API and Google Maps library to provide pitstops from the user's starting and ending locations.</p>
 							<div class="workTags">
-								<h4 class="heading__work__subtitle">PSD Conversion</h4>
-								<h4 class="heading__work__subtitle">Responsive</h4>
-								<h4 class="heading__work__subtitle">HTML5</h4>
-								<h4 class="heading__work__subtitle">CSS3</h4>
-								<h4 class="heading__work__subtitle">CSS Grid</h4>
+								<span class="tag">Restful API</span>
+								<span class="tag">Google Places API</span>
+								<span class="tag">Google Map Library</span>
+								<span class="tag">Collaborative</span>
+								<span class="tag">UI / UX Design</span>
 							</div>
-							<p class="text__reg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi dolorem id laborum autem, ut possimus rerum dicta tempore
-								blanditiis asperiores nobis aperiam repellendus, delectus vel totam esse quae laboriosam quis. </p>
-					
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, ullam expedita. Ea, harum hic sint laboriosam perspiciatis
-								aspernatur neque omnis molestias, quaerat in eligendi! Iusto eos expedita impedit aspernatur sit!</p>
+							<div class="buttonBox">
+								<a href="http://lindazhao.com/pitstop/" class="btn--live">Live Site</a>
+								<a href="#" class="btn--cta">More Info</a>
+							</div>
 						</div>
 					</div>
 					<div class="work__image">
@@ -122,20 +150,20 @@
 	
 				<div class="work3 workCard">
 					<div class="work__text">
-						<h3 class="heading__work">Over</h3>
+						<h4 class="workName">Canada Quiz</h4>
+						<h3 class="workType">jQuery Interactive Quiz</h3>
 						<div class="work__description">
-							<div class="workTags">
-								<h4 class="heading__work__subtitle">PSD Conversion</h4>
-								<h4 class="heading__work__subtitle">Responsive</h4>
-								<h4 class="heading__work__subtitle">HTML5</h4>
-								<h4 class="heading__work__subtitle">CSS3</h4>
-								<h4 class="heading__work__subtitle">CSS Grid</h4>
-							</div>
-							<p class="text__reg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi dolorem id laborum autem, ut possimus rerum dicta tempore
-								blanditiis asperiores nobis aperiam repellendus, delectus vel totam esse quae laboriosam quis. </p>
-				
-							<p class="text__reg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, ullam expedita. Ea, harum hic sint laboriosam perspiciatis
-								aspernatur neque omnis molestias, quaerat in eligendi! Iusto eos expedita impedit aspernatur sit!</p>
+							<p class="text__reg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi dolorem id laborum autem, ut possimus rerum dicta tempore</p>
+						</div>
+						<div class="workTags">
+							<span class="tag">jQuery / JavaScript</span>
+							<span class="tag">Responsive</span>
+							<span class="tag">HTML5</span>
+							<span class="tag">SASS</span>
+							<span class="tag">Patriotism</span>
+						</div>
+						<div class="buttonBox">
+							<a href="http://lindazhao.com/jquery-quiz/" class="btn--live">Live Site</a>
 						</div>
 					</div>
 					<div class="work__image">
@@ -145,20 +173,23 @@
 				
 				<div class="work4 workCard">
 					<div class="work__text">
-						<h3 class="heading__work">Over</h3>
+						<h4 class="workName">Betsy</h4>
+						<h3 class="workType">React + API App from Client Brief</h3>
 						<div class="work__description">
-							<div class="workTags">
-								<h4 class="heading__work__subtitle">PSD Conversion</h4>
-								<h4 class="heading__work__subtitle">Responsive</h4>
-								<h4 class="heading__work__subtitle">HTML5</h4>
-								<h4 class="heading__work__subtitle">CSS3</h4>
-								<h4 class="heading__work__subtitle">CSS Grid</h4>
-							</div>
-							<p class="text__reg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi dolorem id laborum autem, ut possimus rerum dicta tempore
-								blanditiis asperiores nobis aperiam repellendus, delectus vel totam esse quae laboriosam quis. </p>
-				
-							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, ullam expedita. Ea, harum hic sint laboriosam perspiciatis
-								aspernatur neque omnis molestias, quaerat in eligendi! Iusto eos expedita impedit aspernatur sit!</p>
+							<p class="text__reg">Design, build and deployment of a React app to fulfill my client's goals. Working in a group of 3, we created a baby registry that allows a host to search and save products from etsy.com. </p>
+
+						</div>
+						<div class="workTags">
+							<span class="tag">React</span>
+							<span class="tag">React Router</span>
+							<span class="tag">Firebase</span>
+							<span class="tag">Collaborative</span>
+							<span class="tag">UI / UX Design</span>
+							<span class="tag">Wireframing</span>
+						</div>
+						<div class="buttonBox">
+							<a href="baby-registry-b41ed.firebaseapp.com" class="btn--live">Live Site</a>
+							<a href="#" class="btn--cta">More Info</a>
 						</div>
 					</div>
 					<div class="work__image">
@@ -169,40 +200,81 @@
 			</div>
 		</section>
 
-		<section class="contact">
-			<div class="wrapper">
-				
-			</div>
+		<section class="socialSection" id="socialSection">
+			<!-- <div class="wrapper"> -->
+				<h2 class="heading__section">Connect!</h2>
+				<div class="socialSectionLayout">
+					<div class="socialSectionIcons">
+						<a href="#" class="icon--social">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<p>hello@lindazhao.com</p>
+						</a>
+						<a href="https://twitter.com/Linda_OMG" class="icon--social">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<p>@linda_omg</p>
+						</a>
+						<a href="https://www.linkedin.com/in/lindajzhao/" class="icon--social">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+							<p>LinkedIn</p>
+						</a>
+						<a href="https://medium.com/@Linda_OMG" class="icon--social">
+							<i class="fa fa-medium" aria-hidden="true"></i>
+							<p>Medium</p>
+						</a>
+						<a href="https://github.com/lindajzhao" class="icon--social">
+							<i class="fa fa-github" aria-hidden="true"></i>
+							<p>Github</p>
+						</a>		
+					</div>
+					
+					<form class="contactForm" action="">
+						<h3 class="heading__form">Say Hello</h3>
+						<div class="formdiv">
+							<label for="senderEmail">Contact Email:</label>
+							<input type="email" name="senderEmail">
+						</div>
+					
+						<div class="formdiv">
+							<label for="message">Message:</label>
+							<textarea name="message"></textarea> 
+							<!-- <input type="text" name="message"> -->
+						</div>
+					
+						<button class="btn">Send Email</button>
+					</form>
+				</div>		
+			<!-- </div> -->
 		</section>
 
 	</main>
-	
+
 	<footer>
-		<div class="wrapper">
-
-			<h2 class="heading__hero">Say Hello</h2>
-			<p class="text__reg">I would love to hear from you! </p>
-			<form class="contactForm" action="">
-				<label for="senderEmail">Contact Email:</label>
-				<input type="email">
-			
-				<label for="senderEmail">Message:</label>
-				<input type="email">
-			
-				<button>Send Email</button>
-			
-			</form>
-
+		<div class="footerWrapper">
+			<h1 class="logo"><img src="/assets/cursive-l-logo.svg" alt="Linda Zhao personal logo, a cursive L" class="logo"></h1>
 			<nav class="footerNav">
-				<a href="/" class="link__mainNav">Home</a>
-				<a href="#portfolio" class="link__mainNav">Portfolio</a>
-				<a href="#contact" class="link__mainNav">Contact</a>
+				<a href="/" class="link__footerNav">Home</a>
+				<a href="#portfolio" class="link__footerNav">Portfolio</a>
+				<a href="#socialSection" class="link__footerNav">Contact</a>
 			</nav>
+
 			<div class="footerSocialWrap">
-				social here
+				<a href="#" class="icon--social">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+				</a>
+				<a href="https://twitter.com/Linda_OMG" class="icon--social">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/lindajzhao/" class="icon--social">
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+				</a>
+				<a href="https://medium.com/@Linda_OMG" class="icon--social">
+					<i class="fa fa-medium" aria-hidden="true"></i>
+				</a>
+				<a href="https://github.com/lindajzhao" class="icon--social">
+					<i class="fa fa-github" aria-hidden="true"></i>
+				</a>
 			</div>
 		</div>
-
 	</footer>
 
 

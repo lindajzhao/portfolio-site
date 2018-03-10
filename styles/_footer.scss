@@ -1,0 +1,22 @@
+//---------------------------
+//        Footer
+//---------------------------
+
+footer {
+    background: $color-ac;
+    // border: 1px solid black;
+
+    .logo {
+        margin-left: 20px;
+    }
+}
+
+.footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerSocialWrap {
+    @include flexCenter(row);
+}

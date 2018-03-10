@@ -1,0 +1,101 @@
+//---------------------------
+//     Portfolio/works
+//---------------------------
+
+.portfolio {
+    padding: 100px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    background: $color-gray;
+}
+
+.workTags {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tag:not(:last-of-type) {
+    margin-right: 20px;
+    position: relative;
+    &::after {
+        content: "◆";
+        color: $color-main;
+        position: absolute;
+        right: -16px;
+        top: -1px;
+        font-size: 14px;
+    }
+}
+
+.workCard {
+    padding: 60px 0;
+    position: relative;
+    display: flex;
+    &:nth-of-type(2n) {
+        .work__text {
+            order: 2;
+        }
+
+        .work__image {
+            order: 1;
+        }
+    }
+}
+
+.work__description {
+    margin-top: 40px;
+    order: 1;
+}
+
+.work__image {
+    order: 2;
+    min-width: 40%;
+}
+
+.buttonBox {
+    display: flex;
+    flex-flow: row wrap;
+
+    .btn--cta {
+        margin-left: 20px;
+    }
+}
+
+.mockup {
+    max-width: 400px;
+}
+
+.mockup--right {
+    @extend .mockup;
+    position: absolute;
+    right: -10%;
+}
+
+.mockup--left {
+    @extend .mockup--right;
+    left: -10%;
+}
+
+.workTags {
+    @include remCalc(14);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.workName {
+    @include remCalc(16);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-main;
+    // border-bottom: 2px solid $color-main;
+    // padding: 0 100px 3px 0;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.workType {
+    @include remCalc(28);
+}

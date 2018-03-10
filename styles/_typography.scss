@@ -3,6 +3,14 @@
     font-size: ($fontSize / 16) * 1rem;
 }
 
+//theme accent colors
+$color-gray: #eff2f5;
+$color-dkgray: #5a5a5a;
+$color-main: #7570ff;
+$color-ac: #f95d8f;
+$color-opacity: rgba(white, 0.8);
+
+
 // Normalize typography
 body {
     font-family: 'Montserrat', sans-serif;
@@ -35,42 +43,33 @@ p {
 .heading {
     font-weight: 700;
     &__section {
+        margin-bottom: 40px;
        @include remCalc(60); 
-    //    margin-bottom: 10px;
        @media (max-width: $break-small) {
            font-size: 14vw;
        }
     }
 
     &__skillBox {
-        @include remCalc(36);
-        // margin-top: 5px;
-        // text-align: center;
+        @include remCalc(20);
     }
 
     &__hero {
         @include remCalc(60);
-        font-weight: 700;
+        margin-bottom: 10px;
     }
 
-    &__work {
-        @include remCalc(36);
+    &__form {
+        @include remCalc(30);
+        margin-bottom: 30px;
     }
-}
-
-.workTags {
-    @include remCalc(14);
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.light {
-    color: white;
 }
 
 .text {
     &__hero {
         margin: 5px 0;
+        font-weight: 400;
+        @include remCalc(20); 
     }
 
     &__reg {
@@ -80,29 +79,44 @@ p {
 
 }
 
-
-.closedNow {
-    color: rgb(221, 143, 143);
-}
-
 .link {
     &__mainNav {
         margin-left: 40px;
         color: black;
-        padding: 20px 5px;
-        border-bottom: none;
+        padding: 18px 5px 21px;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s border, 0.3s color;
+
+        &:visited {
+            color: black;
+        }
+
         &:hover, &:focus {
             color: $color-main;
-            border-bottom: 1px solid $color-main;
+            border-bottom: 3px solid $color-main;
+        }
+
+        @media (max-width: $break-small) {
+            margin-left: 10px;
+        }
+    }
+
+    &__ul {
+        color: $color-ac;
+    }
+
+    &__footerNav {
+        margin-left: 10px;
+        color: black;
+        padding: 8px 0;
+        border-bottom: 1px solid transparent;
+        &:hover, &:focus {
+            color: black;
+            border-bottom: 1px solid black;
         }
 
         &:visited {
             color: black;
         }
-    }
-
-    &__ul {
-        // @include remCalc(16); 
-        color: $color-ac;
     }
 }

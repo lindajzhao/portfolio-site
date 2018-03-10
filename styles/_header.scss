@@ -2,7 +2,6 @@
 //           Header
 //---------------------------
 
-
 header {
     // center wrapper in header
     display: flex;
@@ -14,5 +13,53 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+//---------------------------
+//        Hero
+//---------------------------
+
+.hero {
+    // min-height: 70vh;
+    // background:linear-gradient(rgba(rgb(247, 27, 255),0.5),rgba(rgb(255, 91, 241),0.5)), url('/assets/hero-flowers.jpeg');
+    // https://www.gradient-animator.com/
+    background: linear-gradient(238deg, #7570ff, #514ead, #88718d);
+    background-size: 600% 600%;
+
+    -webkit-animation: hero-color-shift 30s ease infinite;
+    -moz-animation: hero-color-shift 30s ease infinite;
+    animation: hero-color-shift 30s ease infinite;
+
+    @-webkit-keyframes hero-color-shift {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes hero-color-shift {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes hero-color-shift { 
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+
+}
+
+.heroWrapper {
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 40vh;
+    @media (max-width: $break-small) {
+        width: 95%;
+    } 
+    a {
+        margin-top: 20px;
+        @include btn( $color-ac, $color-ac, transparent);
+        // border: 3px solid 
     }
 }

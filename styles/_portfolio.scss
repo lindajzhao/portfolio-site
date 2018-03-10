@@ -7,6 +7,56 @@
     display: flex;
     flex-flow: column nowrap;
     background: $color-gray;
+
+    @media (max-width: 1070px) {
+        .wrapper {
+            width: 95%;
+        }
+    }
+}
+
+
+// individual works
+.workCard {
+    padding: 60px 0;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+
+    &:nth-of-type(2n) {
+        .work__text {
+            order: 2;
+        }
+
+        .work__image {
+            order: 1;
+        }
+    }
+
+    @media(max-width:$break-med) {
+        flex-flow: row wrap;
+
+        .work__text {
+            order: 2;
+        }
+
+        .work__image {
+            order: 1;
+        }
+    }
+}
+
+.work__description {
+    margin-top: 40px;
+    order: 1;
+}
+
+.work__image {
+    order: 2;
+    min-width: 50%;
+    @media (max-width: $break-med) {
+        min-width: initial;
+    }
 }
 
 .workTags {
@@ -27,31 +77,6 @@
     }
 }
 
-.workCard {
-    padding: 60px 0;
-    position: relative;
-    display: flex;
-    &:nth-of-type(2n) {
-        .work__text {
-            order: 2;
-        }
-
-        .work__image {
-            order: 1;
-        }
-    }
-}
-
-.work__description {
-    margin-top: 40px;
-    order: 1;
-}
-
-.work__image {
-    order: 2;
-    min-width: 40%;
-}
-
 .buttonBox {
     display: flex;
     flex-flow: row wrap;
@@ -61,19 +86,31 @@
     }
 }
 
-.mockup {
-    max-width: 400px;
-}
-
 .mockup--right {
-    @extend .mockup;
-    position: absolute;
-    right: -10%;
+    right: -15%;
 }
 
 .mockup--left {
-    @extend .mockup--right;
-    left: -10%;
+    left: -15%;
+}
+
+img.mockup--left, img.mock--right {
+    width: initial;
+    max-width: 500px;
+    position: absolute;
+
+    @media (max-width: 900px) {
+        position: relative;
+        left: 0;
+        right: 0;
+        // width: 100%;
+        max-width: initial;
+    }
+    
+    @media (max-width: $break-med) {
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
 }
 
 .workTags {

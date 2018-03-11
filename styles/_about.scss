@@ -4,59 +4,67 @@
 //---------------------------
 
 .about {
-    margin-top: 200px;
-    min-height: 80vh;
+    margin: 100px 0 70px;
+    min-height: 70vh;
     position: relative;
     background: $color-gray;
+    display: flex;
+    align-items: center;
 
     .left {
         position: absolute;
         top: 0;
     }
-    @media (max-width: $break-med) {
-        margin-top: 300px;
+
+    @media (max-width: 940px) {
+        margin-bottom: 0;
+        .headshot {
+            max-width: 300px;
+            right: 25px;
+        }
     }
 
-    @media (max-width: $break-small) {
-        min-height: 90vh;
-        margin-top: 350px;
+    @media (max-width: $break-med) {
+        // margin-top: 300px;
+        .aboutDesc {
+        //     left: 5%;
+        //     width: 80%;
+        //     margin-top: 30px;
+        width: 100%;
+        }
+
+        .headshot {
+            // left: 50%;
+            // bottom: 0;
+            // top: -55%;
+            // transform: translateX(-50%);
+            display: none;
+        }
     }
+
+    // @media (max-width: $break-small) {
+    //     min-height: 90vh;
+    //     margin-top: 350px;
+    //     .aboutDesc {
+    //         margin-top: 0;
+    //     }
+    // }
 }
 
 .aboutDesc {
-    position: absolute;
-    left: 10%;
-    top: 20%;
-    width: 40%;
-    @media (max-width: 825px) {
-        left: 5%;
-        width: 50%;
-    }
-
-    @media (max-width: $break-med) {
-        left: 5%;
-        width: 80%;
-        margin-top: 30px;
-    }
-    @media (max-width: $break-small) {
-        margin-top: 0;
-    }
+    // position: absolute;
+    // left: 10%;
+    // top: 20%;
+    width: 50%;
 }
 
 .headshot {
-    width: 30%;
-    min-width: 215px;
+    // width: 30%;
+    // min-width: 300px;
     max-width: 400px;
     position: absolute;
-    left: 60%;
+    right: 50px;
     // top: -100px;
-    bottom: 20%;
-    @media (max-width: $break-med) {
-        min-width: 250px;
-        left: 50%;
-        bottom: 0;
-        top: -55%;
-        transform: translateX(-50%);
-    }
-
+    top: 50%;
+    transform: translateY(-50%);
 }

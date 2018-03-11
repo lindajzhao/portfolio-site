@@ -2,16 +2,20 @@
 
 .logo {
     max-width: 40px;
+    transition: 0.3s all ease-out;
+        &:hover, &:focus {
+            transform: rotate(20deg);
+        }
 }
 
 
 .btn--cta {
-    @include btn($color-ac, $color-ac, $color-opacity);
+    @include btn($color-ac, $color-ac, white);
     margin-top: 40px;
 }
 
 .btn--live {
-    @include btn(black, black, $color-opacity);
+    @include btn(black, black, white);
     // margin-top: 30px;
     // @include btn($color-ac, $color-ac, $color-opacity);
     margin-top: 40px;

@@ -11,7 +11,7 @@
     border: $bor-color solid 1px;
     padding: 16px 36px;
     border-radius: 30px;
-    transition: 0.2s all;
+    transition: 0.2s all ease-in-out;
     background: $bg-color;
 
     &:hover, &:focus {

@@ -7,6 +7,7 @@
     display: flex;
     flex-flow: column nowrap;
     background: $color-gray;
+    overflow: hidden;
 
     @media (max-width: 1070px) {
         .wrapper {
@@ -22,6 +23,7 @@
     position: relative;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
 
     &:nth-of-type(2n) {
         .work__text {
@@ -38,10 +40,14 @@
 
         .work__text {
             order: 2;
+            width: 100%;
+            margin: 30px 40px 0;
+
         }
 
-        .work__image {
+        div.work__image {
             order: 1;
+            width: 100%;
         }
     }
 }
@@ -54,9 +60,6 @@
 .work__image {
     order: 2;
     min-width: 50%;
-    @media (max-width: $break-med) {
-        min-width: initial;
-    }
 }
 
 .workTags {
@@ -79,37 +82,56 @@
 
 .buttonBox {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 
     .btn--cta {
         margin-left: 20px;
+        margin-top: 0;
     }
+    .btn--live {
+        margin-top: 0;
+    }
+
+    @media (max-width: 450px) {
+        flex-flow: column wrap;
+        align-items: flex-start;
+        .btn--cta {
+            margin-left: 0;
+            // margin-top: 5px;
+            // width: 100%;
+        }
+
+        .btn--live {
+            margin-bottom: 5px;
+            // width: 100%;
+        }
+    }
+}
+
+.mockup--right, .mockup--left {
+    max-width: 500px;
+    position: absolute;
 }
 
 .mockup--right {
-    right: -15%;
+    right: -100px;
+    @media (max-width:860px) {
+        right: -180px;
+    }
 }
 
 .mockup--left {
-    left: -15%;
+    left: -100px;
+    @media (max-width: 860px) {
+        left: -180px;
+    }
 }
 
-img.mockup--left, img.mock--right {
-    width: initial;
-    max-width: 500px;
-    position: absolute;
-
-    @media (max-width: 900px) {
-        position: relative;
-        left: 0;
-        right: 0;
-        // width: 100%;
-        max-width: initial;
-    }
-    
+.mockup--right, .mockup--left {
     @media (max-width: $break-med) {
-        margin: 0 auto;
-        margin-bottom: 40px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
     }
 }
 

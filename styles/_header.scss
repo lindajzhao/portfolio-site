@@ -27,9 +27,9 @@ header {
     background: linear-gradient(238deg, #7570ff, #514ead, #88718d);
     background-size: 600% 600%;
 
-    -webkit-animation: hero-color-shift 30s ease infinite;
-    -moz-animation: hero-color-shift 30s ease infinite;
-    animation: hero-color-shift 30s ease infinite;
+    // -webkit-animation: hero-color-shift 30s ease infinite;
+    // -moz-animation: hero-color-shift 30s ease infinite;
+    // animation: hero-color-shift 30s ease infinite;
 
     @-webkit-keyframes hero-color-shift {
         0%{background-position:0% 50%}

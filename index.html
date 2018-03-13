@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Linda Zhao | Front End Developer</title>
-	<link rel="stylesheet" type="text/css" href="./styles/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src='https://use.fontawesome.com/8d93889061.js'></script>
+	
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles/animate.css">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
 
@@ -13,9 +14,9 @@
 <body>
 	<header>
 		<div class="wrapper">
-			<h1 class="logo">
+			<a href="http://lindazhao.com" class="logo">
 				<img src="/assets/cursive-l-logo.svg" alt="Linda Zhao personal logo, a cursive L" class="logo">
-			</h1>
+			</a>
 			<nav class="mainNav">
 				<a href="#" class="link__mainNav">Home</a>
 				<a href="#portfolio" class="link__mainNav">Portfolio</a>
@@ -26,7 +27,7 @@
 
 	<main>
 		<section class="hero">
-			<div class="heroWrapper">
+			<div class="heroWrapper wow fadeInUp">
 				<h2 class="heading__hero">Linda Zhao</h2>
 				<h3 class="text__hero">Front-End Web Developer</h3>
 				<a href="#portfolio" class="link__ul">See Portfolio</a>
@@ -35,19 +36,19 @@
 
 		<section class="about">
 			<div class="wrapper">
-				<div class="aboutDesc">
+				<div class="aboutDesc wow fadeInUp">
 					<h2 class="heading__section">About Me</h2>
 					<p class="text__reg">My goal is to build products that can make someone's life easier and happier. I love creating memorable and useful applications
 					using the latest tools and techniques. I thrive in cross-discipline teams that focus on passion and creativity.</p>
 					<p class="text__reg">I am excited to be in a field with never ending learning opportunities.</p>
 					<a href="#socialSection" class="link__ul btn--cta">Let's Talk!</a>
 				</div>
-				<img src="./assets/headshot.jpg" alt="headshot" class="headshot">
+				<img src="./assets/headshot.jpg" alt="headshot" class="headshot" id="headshot">
 			</div>
 		</section>
 
 		<section class="skills" id="skills">
-			<div class="wrapper">
+			<div class="wrapper wow fadeInUp">
 				<h2 class="heading__section">Skills</h2>
 				<div class="skillBoxWrap">
 					<div class="skillBox">
@@ -87,7 +88,7 @@
 						<h4 className="heading__skillBox">Firebase</h4>
 					</div>
 					<div class="skillBox">
-						<img src="/assets/logo-sketch.svg" alt="Firebase icon" class="devicon devicon--img sketch-icon">
+						<img src="/assets/logo-sketch.svg" alt="Sketch App icon" class="devicon devicon--img sketch-icon">
 						<h4 className="heading__skillBox">Sketch</h4>
 					</div>
 					<!-- <p>github,, sketch, , sass, firebase, gulp</p>
@@ -102,7 +103,7 @@
 			<div class="wrapper">
 				<h2 class="heading__section">Recent Work</h2>
 				
-				<div class="work1 workCard">
+				<div class="work1 workCard wow fadeInUp">
 					<div class="work__text">
 						<h4 class="workName">Over E-commerce Theme</h4>
 						<h3 class="workType">PSD to HTML/CSS Responsive Site</h3>
@@ -117,8 +118,8 @@
 							</div>
 						</div>
 						<div class="buttonBox">
-							<a href="http://lindazhao.com/over/" class="btn--live">Live Site</a>
-							<a href="#" class="btn--cta">More Info</a>
+							<a href="http://lindazhao.com/over/" class="btn--live" target="_blank">Live Site</a>
+							<a href="#" class="btn--info">More Info</a>
 						</div>
 					</div>
 					<div class="work__image">
@@ -126,7 +127,7 @@
 					</div>
 				</div>
 	
-				<div class="work2 workCard">
+				<div class="work2 workCard wow fadeInUp">
 					<div class="work__text">
 						<h4 class="workName">Pitstop</h4>
 						<h3 class="workType">jQuery & Google API App</h3>
@@ -140,8 +141,8 @@
 								<span class="tag">UI / UX Design</span>
 							</div>
 							<div class="buttonBox">
-								<a href="http://lindazhao.com/pitstop/" class="btn--live">Live Site</a>
-								<a href="#" class="btn--cta">More Info</a>
+								<a href="http://lindazhao.com/pitstop/" class="btn--live" target="_blank">Live Site</a>
+								<a href="#" class="btn--info">More Info</a>
 							</div>
 						</div>
 					</div>
@@ -150,7 +151,7 @@
 					</div>
 				</div>
 	
-				<div class="work3 workCard">
+				<div class="work3 workCard wow fadeInUp">
 					<div class="work__text">
 						<h4 class="workName">Canada Quiz</h4>
 						<h3 class="workType">Interactive jQuery Quiz</h3>
@@ -165,7 +166,7 @@
 							<span class="tag">Patriotism</span>
 						</div>
 						<div class="buttonBox">
-							<a href="http://lindazhao.com/jquery-quiz/" class="btn--live">Live Site</a>
+							<a href="http://lindazhao.com/jquery-quiz/" class="btn--live" target="_blank">Live Site</a>
 						</div>
 					</div>
 					<div class="work__image">
@@ -173,7 +174,7 @@
 					</div>
 				</div>
 				
-				<div class="work4 workCard">
+				<div class="work4 workCard wow fadeInUp">
 					<div class="work__text">
 						<h4 class="workName">Betsy</h4>
 						<h3 class="workType">React + API App from Client Brief</h3>
@@ -190,15 +191,24 @@
 							<span class="tag">Wireframing</span>
 						</div>
 						<div class="buttonBox">
-							<a href="baby-registry-b41ed.firebaseapp.com" class="btn--live">Live Site</a>
-							<a href="#" class="btn--cta">More Info</a>
+							<a href="https://baby-registry-b41ed.firebaseapp.com" class="btn--live" target="_blank">Live Site</a>
+							<a href="#" class="btn--info">More Info</a>
 						</div>
 					</div>
 					<div class="work__image">
-						<img src="./assets/mockup-placeholder.png" alt="mockup4" class="mockup--left">
+						<img src="./assets/betsy-responsive.png" alt="mockup4" class="mockup--left">
 					</div>
 				</div>
 
+			</div>
+		</section>
+
+		<section class="resume">
+			<div class="wrapper  wow fadeInUp">
+				<h2 class="heading__section">Resumé</h2>
+				<!-- <div class="resumeWrapper"> -->
+					<a href="#" class="btn--resume">View and Download PDF Resumé</a>
+				<!-- </div> -->
 			</div>
 		</section>
 
@@ -229,7 +239,7 @@
 						</a>		
 					</div>
 					
-					<form class="contactForm" action="">
+					<form class="contactForm wow fadeInUp" action="https://formspree.io/hello@lindazhao.com" method="POST">
 						<h3 class="heading__form">I would love to hear from you!</h3>
 						<div class="formdiv">
 							<label for="senderEmail">Contact Email:</label>
@@ -253,12 +263,12 @@
 	<footer>
 		<div class="footerWrapper">
 			<a href="http://www.lindazhao.com" class="logo"><img src="/assets/cursive-l-logo.svg" alt="Linda Zhao personal logo, a cursive L" class="logo"></a>
-			<nav class="footerNav">
+			<!-- <nav class="footerNav">
 				<a href="/" class="link__footerNav">Home</a>
 				<a href="#portfolio" class="link__footerNav">Portfolio</a>
 				<a href="#socialSection" class="link__footerNav">Contact</a>
-			</nav>
-
+			</nav> -->
+			
 			<div class="footerSocialWrap">
 				<a href="#" class="icon--social">
 					<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -279,9 +289,16 @@
 		</div>
 	</footer>
 
+	<script src='https://use.fontawesome.com/8d93889061.js'></script>
 
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+	 crossorigin='anonymous'></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 	<script src="./scripts/app.js"></script>
+	 
 </body>
 </html>

@@ -19,7 +19,7 @@
 
 // individual works
 .workCard {
-    padding: 60px 0;
+    padding: 100px 0;
     position: relative;
     display: flex;
     flex-flow: row nowrap;
@@ -60,6 +60,7 @@
 .work__image {
     order: 2;
     min-width: 50%;
+    z-index: 10;
 }
 
 .workTags {
@@ -72,7 +73,7 @@
     position: relative;
     &::after {
         content: "◆";
-        color: $color-main;
+        color: $color-ac;
         position: absolute;
         right: -16px;
         top: -1px;
@@ -84,7 +85,7 @@
     display: flex;
     flex-flow: row nowrap;
 
-    .btn--cta {
+    .btn--info {
         margin-left: 20px;
         margin-top: 0;
     }
@@ -95,7 +96,7 @@
     @media (max-width: 450px) {
         flex-flow: column wrap;
         align-items: flex-start;
-        .btn--cta {
+        .btn--info {
             margin-left: 0;
             // margin-top: 5px;
             // width: 100%;

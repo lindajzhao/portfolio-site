@@ -2,9 +2,9 @@
 
 .logo {
     max-width: 40px;
-    transition: 0.3s all ease-out;
+    transition: 1s all ease-out;
         &:hover, &:focus {
-            transform: rotate(20deg);
+            transform: rotate(180deg);
         }
 }
 
@@ -14,9 +14,18 @@
     margin-top: 40px;
 }
 
+.btn--info {
+    @include btn($color-main, $color-main, white);
+    margin-top: 40px;
+}
+
 .btn--live {
     @include btn(black, black, white);
     // margin-top: 30px;
     // @include btn($color-ac, $color-ac, $color-opacity);
     margin-top: 40px;
+}
+
+.btn--resume {
+    @include btn($color-main, $color-main, white);
 }

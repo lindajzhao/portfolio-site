@@ -19,7 +19,7 @@
 
 // individual works
 .workCard {
-    padding: 100px 0;
+    padding: 80px 0;
     position: relative;
     display: flex;
     flex-flow: row nowrap;
@@ -36,12 +36,14 @@
     }
 
     @media(max-width:$break-med) {
+        padding: 50px 0;
         flex-flow: row wrap;
 
         .work__text {
             order: 2;
             width: 100%;
-            margin: 30px 40px 0;
+            margin: 30px 10px 0 10px;
+            padding: 0;
 
         }
 
@@ -56,11 +58,15 @@
     margin-top: 40px;
     order: 1;
 }
-
+//image half
 .work__image {
     order: 2;
-    min-width: 50%;
+    min-width: 40%;
     z-index: 10;
+}
+// text half
+.work__text {
+    padding-left: 20px;
 }
 
 .workTags {
@@ -93,37 +99,48 @@
         margin-top: 0;
     }
 
-    @media (max-width: 450px) {
-        flex-flow: column wrap;
+    @media (max-width: $break-med) {
         align-items: flex-start;
-        .btn--info {
-            margin-left: 0;
-            // margin-top: 5px;
-            // width: 100%;
-        }
-
-        .btn--live {
-            margin-bottom: 5px;
-            // width: 100%;
+        .btn--live, .btn--info {
+            width: 220px;
         }
     }
+    
+    @media (max-width: 450px) {
+        flex-flow: column wrap;
+        align-items: center;
+            .btn--info {
+                margin-left: 0;
+                // margin-top: 5px;
+                width: 100%;
+            }
+        
+            .btn--live {
+                margin-bottom: 5px;
+                width: 100%;
+            }
+    }
+
+
 }
 
 .mockup--right, .mockup--left {
-    max-width: 500px;
-    position: absolute;
+    max-width: 450px;
+    // position: absolute;
 }
 
 .mockup--right {
-    right: -100px;
+    // right: -100px;
     @media (max-width:860px) {
+        position: absolute;
         right: -180px;
     }
 }
 
 .mockup--left {
-    left: -100px;
+    // left: -100px;
     @media (max-width: 860px) {
+        position: absolute;
         left: -180px;
     }
 }

@@ -23,18 +23,7 @@ header {
 .hero {
     background-color: $color-gray;
     background-image: $diamond-bg;
-}
-
-.heroWrapper {
-    width: 70%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding-top: 30vh;
-    @media (max-width: $break-small) {
-        width: 95%;
-    } 
-    a {
-        margin-top: 20px;
-        @include btn( $color-ac, $color-ac, white);
-    }
+    min-height: calc( 100vh - 56px );
+    display: flex;
+    align-items: center;
 }

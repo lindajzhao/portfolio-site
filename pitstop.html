@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Linda Zhao | Front End Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles/animate.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
+
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<a href="http://lindazhao.com" class="logo">
+				<img src="/assets/cursive-l-logo.svg" alt="Linda Zhao personal logo, a cursive L" class="logo">
+			</a>
+			<nav class="mainNav">
+				<a href="#" class="link__mainNav">Home</a>
+				<a href="#portfolio" class="link__mainNav">Portfolio</a>
+				<a href="#socialSection" class="link__mainNav">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="pitstopBlogPage blogPage">
+		<section class="blogHero">
+			<div class="wrapper wow fadeInUp">
+				<h2 class="heading__hero">Pitstop</h2>
+				<h3 class="text__hero">Finding Restaurants Along a Google Route</h3>
+			</div>
+		</section>
+
+		<article class="blogContent">
+			<div class="wrapper">
+				<img src="/assets/pitstop-desktop.png" alt="Pitstop app showing Google Map and Pitstop panel with nearby restaurant details" class="img__blogTop">
+				<div class="workTags">
+					<span class="tag">Restful API</span>
+					<span class="tag">jQuery</span>
+					<span class="tag">Google Places API</span>
+					<span class="tag">Google Map Library</span>
+					<span class="tag">Collaborative</span>
+					<span class="tag">Design</span>
+				</div>
+				<p class="text__blog text--center">A jQuery interactive app created with <a href="http://joeydeol.com">Joey Deol</a></p>
+
+				<h3 class="heading__blog">The Problem</h3>
+				<p class="text__blog">
+					I recently took a car trip with my family to Ottawa for Canada 150. We drove for many hours along unfamiliar roads in rural areas, and the only places we could stop were the OnRoute gas stations on the highway. 
+				</p>
+				<p class="text__blog">
+					Every so often we would see an exit sign with a fast-food restaurant, exciting! But some times the restaurant would be quite a far detour from the exit, eating fries gets boring after a while. Are there any local eateries on our route?
+				</p>
+				<p class="text__blog">
+					There is no way of using Google Maps to check a large area for restaurants. I'd have to zoom in on a specific area. That's an issue when I'm not familiar with the region.
+				</p>
+
+				<h3 class="heading__blog">User Journey</h3>
+				<p>What would</p>
+			</div>
+		</article>
+
+
+		<section class="socialSection" id="socialSection">
+			<!-- <div class="wrapper"> -->
+				<h2 class="heading__section">Say Hello!</h2>
+				<div class="socialSectionLayout">
+					<div class="socialSectionIcons">
+						<a href="mailto:hello@lindazhao.com?Subject=Hello%20Linda" target="_top" class="icon--social">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<p>hello@lindazhao.com</p>
+						</a>
+						<a href="https://twitter.com/Linda_OMG" class="icon--social">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<p>@linda_omg</p>
+						</a>
+						<a href="https://www.linkedin.com/in/lindajzhao/" class="icon--social">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+							<p>LinkedIn</p>
+						</a>
+						<a href="https://medium.com/@Linda_OMG" class="icon--social">
+							<i class="fa fa-medium" aria-hidden="true"></i>
+							<p>Medium</p>
+						</a>
+						<a href="https://github.com/lindajzhao" class="icon--social">
+							<i class="fa fa-github" aria-hidden="true"></i>
+							<p>Github</p>
+						</a>		
+					</div>
+					
+					<form class="contactForm wow fadeInUp" action="https://formspree.io/hello@lindazhao.com" method="POST">
+						<h3 class="heading__form">I would love to hear from you!</h3>
+						<div class="formdiv">
+							<label for="senderEmail">Contact Email:</label>
+							<input type="email" name="senderEmail">
+						</div>
+					
+						<div class="formdiv">
+							<label for="message">Message:</label>
+							<textarea name="message"></textarea> 
+							<!-- <input type="text" name="message"> -->
+						</div>
+					
+						<button class="btn">Send Email</button>
+					</form>
+				</div>		
+			<!-- </div> -->
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="footerWrapper">
+			<a href="http://www.lindazhao.com" class="logo"><img src="/assets/cursive-l-logo.svg" alt="Linda Zhao personal logo, a cursive L" class="logo"></a>
+			<!-- <nav class="footerNav">
+				<a href="/" class="link__footerNav">Home</a>
+				<a href="#portfolio" class="link__footerNav">Portfolio</a>
+				<a href="#socialSection" class="link__footerNav">Contact</a>
+			</nav> -->
+			
+			<div class="footerSocialWrap">
+				<a href="#" class="icon--social">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+				</a>
+				<a href="https://twitter.com/Linda_OMG" class="icon--social">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/lindajzhao/" class="icon--social">
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+				</a>
+				<a href="https://medium.com/@Linda_OMG" class="icon--social">
+					<i class="fa fa-medium" aria-hidden="true"></i>
+				</a>
+				<a href="https://github.com/lindajzhao" class="icon--social">
+					<i class="fa fa-github" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src='https://use.fontawesome.com/8d93889061.js'></script>
+
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+	 crossorigin='anonymous'></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+	<script src="./scripts/app.js"></script>
+	 
+</body>
+</html>

@@ -5,7 +5,6 @@
 
 .skills {
     padding: 100px 0;
-    // background: $color-gray;
     .wrapper {
         display: flex;
         flex-flow: column nowrap;
@@ -15,14 +14,13 @@
 
 .devicon {
     // i and img
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: ease 0.5s all;
+    -webkit-filter: grayscale(60%);
+    filter: grayscale(60%);
+    transition: ease 0.3s all;
     margin-bottom: 15px;
     &:hover, &:focus {
         -webkit-filter: grayscale(0);
         filter: grayscale(0);
-        transform: scale(1.1);
     }
 }
 
@@ -51,6 +49,5 @@ i.devicon {
 .skillBox {
     min-height: 150px;
     width: 33%;
-    // margin: 30px;
     @include flexCenter(column);
 }

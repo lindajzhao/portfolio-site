@@ -70,6 +70,12 @@ p ~ p {
         width: 90%;
         text-align: center;
     }
+
+    &__blog {
+        @include remCalc(40); 
+        margin-top: 50px;
+        text-align: left;
+    }
 }
 
 .text {
@@ -82,6 +88,24 @@ p ~ p {
     &__reg {
        @include remCalc(16); 
        color: $color-dkgray;
+    }
+
+    &__blog {
+        @include remCalc(18); 
+        text-align: left;
+        
+        a {
+            color: $color-main;
+            font-weight: 700;
+
+            &:hover, &:focus {
+                color: rgba($color-main, 0.5);
+            }
+        }
+    }
+
+    &--center {
+        text-align: center;
     }
 
 }

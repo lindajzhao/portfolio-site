@@ -1,0 +1,22 @@
+
+.blogHero {
+    @extend .hero;
+    min-height: 50vh;
+}
+
+.blogContent {
+    padding: 100px 0;
+    @include flexCenter(column);
+
+    .workTags {
+        @include flexCenter(row);
+    }
+}
+
+.img__blogTop {
+    max-width: 800px;
+}
+
+.heading__blog:first-of-type {
+    margin-top: 80px;
+}

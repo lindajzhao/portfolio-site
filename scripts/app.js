@@ -2,7 +2,6 @@
 
 function adjustImage() {
     if ($(window).width() <= 700) {
-        console.log('smaller than 700')
         $('#headshot').attr('src', './assets/headshot-small.png');
     } else {
         $('#headshot').attr('src', './assets/headshot.jpg');
@@ -19,7 +18,7 @@ $(function() {
 
     new WOW().init();
 
-    // adjustImage();
+    adjustImage();
 
     $(window).resize(function () {
         adjustImage();

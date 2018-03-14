@@ -25,16 +25,19 @@
     }
 
     @media (max-width: $break-med) {
-        margin-top: 300px;
-        // padding-top:100px;
+        margin-top: 350px;
         .aboutDesc {
             width: 100%;
         }
-
+        
         .headshot {
-            top: -250px;
+            top: -275px;
             left: 50%;
             transform: translate(-50%,0);
+        }
+        
+        @media (max-height: 600px) {
+            min-height: 90vh;
         }
     }
 }

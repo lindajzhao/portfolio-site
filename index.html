@@ -12,6 +12,15 @@
 
 </head>
 <body>
+	<!-- Notes
+	ui/ux-OK
+	image, photoshop out brick
+	move images to the middle more-OK
+	remove hovers-NO
+	less padding in portfolio in responsive-OK
+	portfolio- more info
+	buttons full width-OK
+	-->
 	<header>
 		<div class="wrapper">
 			<a href="http://lindazhao.com" class="logo">
@@ -27,10 +36,10 @@
 
 	<main>
 		<section class="hero">
-			<div class="heroWrapper wow fadeInUp">
+			<div class="wrapper wow fadeInUp">
 				<h2 class="heading__hero">Linda Zhao</h2>
 				<h3 class="text__hero">Front-End Web Developer</h3>
-				<a href="#portfolio" class="link__ul">See Portfolio</a>
+				<a href="#portfolio" class="btn--cta">See Portfolio</a>
 			</div>
 		</section>
 
@@ -68,12 +77,12 @@
 						<h4 className="heading__skillBox">HTML</h4>
 					</div>
 					<div class="skillBox">
-						<i class="devicon-css3-plain colored devicon"></i>
-						<h4 className="heading__skillBox">CSS</h4>
+						<i class="devicon-sass-plain colored devicon"></i>
+						<h4 className="heading__skillBox">CSS/ SASS</h4>
 					</div>
 					<div class="skillBox">
-						<i class="devicon-sass-plain colored devicon"></i>
-						<h4 className="heading__skillBox">SASS</h4>
+						<img src="./assets/Sketch_logo_frame.svg" alt="Sketch App icon" class="devicon devicon--img sketch-icon">
+						<h4 className="heading__skillBox">Sketch</h4>
 					</div>
 					<div class="skillBox">
 						<i class="devicon-github-plain colored devicon"></i>
@@ -84,12 +93,8 @@
 						<h4 className="heading__skillBox">Gulp</h4>
 					</div>
 					<div class="skillBox">
-						<img src="/assets/logo-firebase.svg" alt="Firebase icon" class="devicon devicon--img">
+						<img src="./assets/logo-firebase.svg" alt="Firebase icon" class="devicon devicon--img">
 						<h4 className="heading__skillBox">Firebase</h4>
-					</div>
-					<div class="skillBox">
-						<img src="/assets/logo-sketch.svg" alt="Sketch App icon" class="devicon devicon--img sketch-icon">
-						<h4 className="heading__skillBox">Sketch</h4>
 					</div>
 					<!-- <p>github,, sketch, , sass, firebase, gulp</p>
 					<p>currently learning (later maybe)</p> -->
@@ -135,14 +140,15 @@
 							<p class="text__reg">An app to find restaurant during a road trip. My partner and I used the Google Places API and Google Maps library to provide pitstops from the user's starting and ending locations.</p>
 							<div class="workTags">
 								<span class="tag">Restful API</span>
+								<span class="tag">jQuery</span>
 								<span class="tag">Google Places API</span>
 								<span class="tag">Google Map Library</span>
 								<span class="tag">Collaborative</span>
-								<span class="tag">UI / UX Design</span>
+								<span class="tag">Design</span>
 							</div>
 							<div class="buttonBox">
 								<a href="http://lindazhao.com/pitstop/" class="btn--live" target="_blank">Live Site</a>
-								<a href="#" class="btn--info">More Info</a>
+								<a href="/pitstop.html" class="btn--info">More Info</a>
 							</div>
 						</div>
 					</div>
@@ -187,7 +193,7 @@
 							<span class="tag">React Router</span>
 							<span class="tag">Firebase</span>
 							<span class="tag">Collaborative</span>
-							<span class="tag">UI / UX Design</span>
+							<span class="tag">Design</span>
 							<span class="tag">Wireframing</span>
 						</div>
 						<div class="buttonBox">
@@ -217,7 +223,7 @@
 				<h2 class="heading__section">Say Hello!</h2>
 				<div class="socialSectionLayout">
 					<div class="socialSectionIcons">
-						<a href="#" class="icon--social">
+						<a href="mailto:hello@lindazhao.com?Subject=Hello%20Linda" target="_top" class="icon--social">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 							<p>hello@lindazhao.com</p>
 						</a>

@@ -3,10 +3,9 @@
 //---------------------------
 
 .portfolio {
-    padding: 100px 0;
+    padding-top: 100px;
     display: flex;
     flex-flow: column nowrap;
-    background: $color-gray;
     overflow: hidden;
 
     @media (max-width: 1070px) {

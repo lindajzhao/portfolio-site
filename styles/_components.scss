@@ -10,12 +10,12 @@
 
 
 .btn--cta {
-    @include btn(white, white, $color-ac);
+    @include btn(white, $color-ac, $color-ac);
     margin-top: 40px;
 }
 
 .btn--info {
-    @include btn(white, white, $color-main);
+    @include btn(white,$color-main, $color-main);
     margin-top: 40px;
 }
 
@@ -27,5 +27,5 @@
 }
 
 .btn--resume {
-    @include btn($color-main, $color-main, white);
+    @include btn(white, $color-main, $color-main);
 }

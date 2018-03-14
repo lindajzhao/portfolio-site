@@ -1,6 +1,7 @@
 
 .resume {
-    padding: 100px 0 0;
+    background: $color-gray;
+    padding: 100px 0;
     @include flexCenter(column);
     min-height: 100px;
 

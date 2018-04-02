@@ -8,19 +8,13 @@
 	<link rel="stylesheet" type="text/css" href="./styles/style.css">
 	<link rel="stylesheet" href="./styles/animate.css">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+	 crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
 </head>
 <body>
-	<!-- Notes
-	ui/ux-OK
-	image, photoshop out brick
-	move images to the middle more-OK
-	remove hovers-NO
-	less padding in portfolio in responsive-OK
-	portfolio- more info
-	buttons full width-OK
-	-->
 	<header>
 		<div class="wrapper">
 			<a href="http://lindazhao.com" class="logo">
@@ -29,27 +23,30 @@
 			<nav class="mainNav">
 				<a href="#" class="link__mainNav">Home</a>
 				<a href="#portfolio" class="link__mainNav">Portfolio</a>
-				<a href="#socialSection" class="link__mainNav">Contact</a>
+				<a href="#contact" class="link__mainNav">Contact</a>
 			</nav>
 		</div>
 	</header>
-
-	<main>
+	
+	<main id="main">
 		<section class="hero">
 			<div class="wrapper wow fadeInUp">
 				<h2 class="heading__hero">Linda Zhao</h2>
-				<h3 class="text__hero">Front-End Web Developer</h3>
+				<h3 class="text__hero">Web Developer</h3>
 				<a href="#portfolio" class="btn--cta">See Portfolio</a>
+				<!-- animated chevron to about -->
+				<a href="#about" class="hero__chevron">
+					<i class="fas fa-chevron-down"></i>
+				</a>
 			</div>
 		</section>
 
-		<section class="about">
+		<section class="about" id="about">
 			<div class="wrapper">
 				<div class="aboutDesc wow fadeInUp">
 					<h2 class="heading__section">About Me</h2>
-					<p class="text__reg">My goal is to build products that can make someone's life easier and happier. I love creating memorable and useful applications
-					using the latest tools and techniques. I thrive in cross-discipline teams that focus on passion and creativity.</p>
-					<p class="text__reg">I am excited to be in a field with never ending learning opportunities.</p>
+					<p class="text__reg">My goal as a web developer is to build products that make peoples’ lives easier and happier. I thrive in cross-disciplinary teams that value passion and creativity. When creating websites, apps and software products, I seek out the latest best practices in HTML, CSS/SASS and JavaScript and React</p>
+					<p class="text__reg">I am also: a designer, generalist, sci-fi fan, doggy owner, #teamtea, nature-lover and former x-ray technologist. My patronus is the West Highland Terrier.</p>
 					<a href="#socialSection" class="link__ul btn--cta">Let's Talk!</a>
 				</div>
 				<img src="./assets/headshot.jpg" alt="headshot" class="headshot" id="headshot">
@@ -107,28 +104,28 @@
 		<section class="portfolio" id="portfolio">
 			<div class="wrapper">
 				<h2 class="heading__section">Recent Work</h2>
-				
+
 				<div class="work1 workCard wow fadeInUp">
 					<div class="work__text">
-						<h4 class="workName">Over E-commerce Theme</h4>
-						<h3 class="workType">PSD to HTML/CSS Responsive Site</h3>
+						<h4 class="workName">Trading Card Tracker</h4>
+						<h3 class="workType">TCG Collector(ReactJS)</h3>
 						<div class="work__description">
-							<p class="text__reg">A responsive one-page website developed from a PSD mockup. I was responsible for designing the responsive view to provide the full experience for mobile users.</p>
-							<div class="workTags">
-								<h4 class="tag">Responsive</h4>
-								<h4 class="tag">HTML5</h4>
-								<h4 class="tag">SASS</h4>
-								<h4 class="tag">CSS3</h4>
-								<h4 class="tag">CSS Grid</h4>
-							</div>
+							<p class="text__reg">Grabbing card information from third-party APIs for multiple game franchises. Display and filter trading cards, and save custom decks in Firebase. </p>
+						</div>
+						<div class="workTags">
+							<span class="tag">Mobile-first</span>
+							<span class="tag">Working with Data</span>
+							<span class="tag">Firebase</span>
+							<span class="tag">RESTful API</span>
+							<span class="tag">Collaborative</span>
 						</div>
 						<div class="buttonBox">
-							<a href="http://lindazhao.com/over/" class="btn--live" target="_blank">Live Site</a>
-							<a href="https://github.com/lindajzhao/over" class="btn--info">Github</a>
+							<a href="https://tcg-tracker.firebaseapp.com" class="btn--live" target="_blank">Live Site</a>
+							<a href="https://github.com/lindajzhao/tcg-tracker" class="btn--info" target="_blank">Github</a>
 						</div>
 					</div>
 					<div class="work__image">
-						<img src="./assets/over-responsive.png" alt="mockup1" class="mockup--right">
+						<img src="./assets/pokemon-desktop.png" alt="mockup3" class="mockup--right">
 					</div>
 				</div>
 	
@@ -148,7 +145,7 @@
 							</div>
 							<div class="buttonBox">
 								<a href="https://java-the-script.github.io/pitstop/" class="btn--live" target="_blank">Live Site</a>
-								<a href="https://github.com/java-the-script/pitstop" class="btn--info">Github</a>
+								<a href="https://github.com/java-the-script/pitstop" class="btn--info" target="_blank">Github</a>
 							</div>
 						</div>
 					</div>
@@ -173,7 +170,7 @@
 						</div>
 						<div class="buttonBox">
 							<a href="http://lindazhao.com/jquery-quiz/" class="btn--live" target="_blank">Live Site</a>
-							<a href="https://github.com/lindajzhao/canada-is-real" class="btn--info">Github</a>
+							<a href="https://github.com/lindajzhao/canada-is-real" class="btn--info" target="_blank">Github</a>
 						</div>
 					</div>
 					<div class="work__image">
@@ -199,7 +196,7 @@
 						</div>
 						<div class="buttonBox">
 							<a href="https://baby-registry-b41ed.firebaseapp.com" class="btn--live" target="_blank">Live Site</a>
-							<a href="https://github.com/Baby-Registry/baby-shower-app" class="btn--info">Github</a>
+							<a href="https://github.com/Baby-Registry/baby-shower-app" class="btn--info" target="_blank">Github</a>
 						</div>
 					</div>
 					<div class="work__image">
@@ -207,15 +204,41 @@
 					</div>
 				</div>
 
+				<div class="work5 workCard wow fadeInUp">
+					<div class="work__text">
+						<h4 class="workName">Over E-commerce Theme</h4>
+						<h3 class="workType">PSD to HTML/CSS Responsive Site</h3>
+						<div class="work__description">
+							<p class="text__reg">A responsive one-page website developed from a PSD mockup. I was responsible for designing the responsive view to provide
+								the full experience for mobile users.</p>
+							<div class="workTags">
+								<h4 class="tag">Responsive</h4>
+								<h4 class="tag">HTML5</h4>
+								<h4 class="tag">SASS</h4>
+								<h4 class="tag">CSS3</h4>
+								<h4 class="tag">CSS Grid</h4>
+							</div>
+						</div>
+						<div class="buttonBox">
+							<a href="http://lindazhao.com/over/" class="btn--live" target="_blank">Live Site</a>
+							<a href="https://github.com/lindajzhao/over" class="btn--info" target="_blank">Github</a>
+						</div>
+					</div>
+					<div class="work__image">
+						<img src="./assets/over-responsive.png" alt="mockup1" class="mockup--right">
+					</div>
+				</div>
+
+
 			</div>
 		</section>
 
-		<!-- <section class="resume">
+		<section class="resume">
 			<div class="wrapper  wow fadeInUp">
 				<h2 class="heading__section">Resumé</h2>
-				<a href="#" class="btn--resume">View and Download PDF Resumé</a>
+				<a href="./assets/linda-zhao-resume.pdf" class="btn--resume">View and Download PDF Resumé</a>
 			</div>
-		</section> -->
+		</section>
 
 		<section class="socialSection" id="socialSection">
 			<!-- <div class="wrapper"> -->

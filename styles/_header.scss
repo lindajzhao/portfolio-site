@@ -23,7 +23,41 @@ header {
 .hero {
     background-color: $color-gray;
     background-image: $diamond-bg;
-    min-height: calc( 100vh - 56px );
+    // min-height: calc( 100vh - 56px );
+    min-height: calc( 90vh - 56px );
     display: flex;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__chevron {
+    color: black;
+    padding: 20px;
+    font-size: 30px;
+    // position at bottom center of page
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    &:visited {
+        color: black;
+    }
+    
+    //animate child i element
+    i {
+        position: relative;
+        animation: fade-down 2s 2s infinite ease-out;
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 1;
+        top: 0;
+    }
+    100% {
+        opacity: 0;
+        top: 50px;
+    }
 }

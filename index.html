@@ -11,7 +11,6 @@
 	 crossorigin="anonymous">
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-
 </head>
 <body>
 	<header>
@@ -50,7 +49,7 @@
 				</div>
 				<picture class="headshot">
 					<source media="(max-width: 699px)" srcset="./assets/headshot-small.jpg">
-					<source media="(min-width: 700px)" srcset="./assets/headshot.jpg">
+					<source media="(min-width: 700px)" srcset="./assets/headshot.jpg 1x, ./assets/headshot@2x.jpg 2x">
 					<img src="headshot.jpg" alt="Headshot">
 				</picture>
 			</div>
@@ -128,7 +127,11 @@
 						</div>
 					</div>
 					<div class="work__image">
-						<img src="./assets/pokemon-desktop.png" alt="mockup3" class="mockup--right">
+						<img 
+							src="./assets/pokemon-450.jpg"
+							srcset="./assets/pokemon-450.jpg 1x, ./assets/pokemon-450@2x.jpg 2x" 
+							alt="Screenshot of Pokemon app" class="mockup--right" 
+						/>
 					</div>
 				</div>
 	
@@ -153,7 +156,11 @@
 						</div>
 					</div>
 					<div class="work__image">
-						<img src="./assets/pitstop-desktop.png" alt="mockup1" class="mockup--left">
+						<img 
+							src="./assets/pitstop-450.jpg"
+							srcset="./assets/pitstop-450.jpg 1x, ./assets/pitstop-450@2x.jpg 2x" 
+							alt="Screenshot of Pitstop app" class="mockup--left" 
+						/>
 					</div>
 				</div>
 	
@@ -177,7 +184,11 @@
 						</div>
 					</div>
 					<div class="work__image">
-						<img src="./assets/canQuiz-desktop.png" alt="mockup3" class="mockup--right">
+						<img 
+							src="./assets/quiz-450.jpg"
+							srcset="./assets/quiz-450.jpg 1x, ./assets/quiz-450@2x.jpg 2x" 
+							alt="Screenshot of quiz app" class="mockup--right" 
+						/>
 					</div>
 				</div>
 				
@@ -203,7 +214,11 @@
 						</div>
 					</div>
 					<div class="work__image">
-						<img src="./assets/betsy-responsive.png" alt="mockup4" class="mockup--left">
+						<img 
+							src="./assets/betsy-450.jpg"
+							srcset="./assets/betsy-450.jpg 1x, ./assets/betsy-450@2x.jpg 2x" 
+							alt="Screenshot of Betsy app" class="mockup--left" 
+						/>
 					</div>
 				</div>
 
@@ -228,11 +243,13 @@
 						</div>
 					</div>
 					<div class="work__image">
-						<img src="./assets/over-responsive.png" alt="mockup1" class="mockup--right">
+						<img 
+							src="./assets/over-450.jpg" 
+							srcset="./assets/over-450.jpg 1x, ./assets/over-450@2x.jpg 2x" 
+							alt="Screenshot of floral ecommerce theme" class="mockup--right" 
+						/>
 					</div>
 				</div>
-
-
 			</div>
 		</section>
 

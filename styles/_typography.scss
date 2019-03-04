@@ -1,15 +1,8 @@
+@import "variables";
 
 @mixin remCalc($fontSize) {
     font-size: ($fontSize / 16) * 1rem;
 }
-
-//theme accent colors
-$color-gray: #f9f9f9;
-$color-dkgray: #5a5a5a;
-$color-main: #7570ff;
-$color-ac: #f95d8f;
-$color-opacity: rgba(white, 0.8);
-
 
 // Normalize typography
 body {

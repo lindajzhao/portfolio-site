@@ -7,20 +7,3 @@ function adjustImage() {
         $('#headshot').attr('src', './assets/headshot.jpg');
     }
 }
-
-
-$(function() {
-    //smoothscroll
-    var scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 800,
-        easing: "easeOutQuad"
-    });
-
-    new WOW().init();
-
-    adjustImage();
-
-    $(window).resize(function () {
-        adjustImage();
-    });
-});

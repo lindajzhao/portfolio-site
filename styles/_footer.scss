@@ -13,9 +13,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    > * {
-        // min-height: 57px;
-    }
     
     @media (max-width: $break-small) {
         flex-flow: row wrap;

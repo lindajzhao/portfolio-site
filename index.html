@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link rel="stylesheet" type="text/css" href="./styles/style.css">
-	<link rel="stylesheet" href="./styles/animate.css">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
 	 crossorigin="anonymous">
@@ -34,7 +33,7 @@
 				<h2 class="heading__hero">Linda Zhao</h2>
 				<h3 class="text__hero">Web Developer</h3>
 				<a href="#portfolio" class="btn--cta">See Portfolio</a>
-				<!-- animated chevron to about -->
+
 				<a href="#about" class="hero__chevron">
 					<i class="fas fa-chevron-down"></i>
 				</a>
@@ -49,7 +48,11 @@
 					<p class="text__reg">I am also: a designer, generalist, sci-fi fan, doggy owner, #teamtea, nature-lover and former x-ray technologist. My patronus is the West Highland Terrier.</p>
 					<a href="#socialSection" class="link__ul btn--cta">Let's Talk!</a>
 				</div>
-				<img src="./assets/headshot.jpg" alt="headshot" class="headshot" id="headshot">
+				<picture class="headshot">
+					<source media="(max-width: 699px)" srcset="./assets/headshot-small.jpg">
+					<source media="(min-width: 700px)" srcset="./assets/headshot.jpg">
+					<img src="headshot.jpg" alt="Headshot">
+				</picture>
 			</div>
 		</section>
 
@@ -318,11 +321,5 @@
 	</footer>
 
 	<script src='https://use.fontawesome.com/8d93889061.js'></script>
-
-	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
-	 crossorigin='anonymous'></script>
-	
-	<script src="./scripts/app.js"></script>
-	 
 </body>
 </html>

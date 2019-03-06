@@ -81,12 +81,13 @@ p ~ p {
     &__reg {
        @include remCalc(16); 
        color: $color-dkgray;
+       line-height: 2;
     }
 
     &__blog {
         @include remCalc(18); 
         text-align: left;
-        
+
         a {
             color: $color-main;
             font-weight: 700;

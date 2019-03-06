@@ -34,16 +34,16 @@ header {
 }
 
 .hero__chevron {
-    color: black;
+    color: #525252;
     padding: 20px;
     font-size: 30px;
     // position at bottom center of page
     position: absolute;
-    bottom: 40px;
+    bottom: -20px;
     left: 50%;
     transform: translate(-50%);
     &:visited {
-        color: black;
+        color: #525252;
     }
 }
 

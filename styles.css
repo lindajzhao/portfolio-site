@@ -18,7 +18,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(assets/heart-long.svg) no-repeat right 10% top 65% / 150px;
+    background: url(assets/heart-long.svg) no-repeat right 10% top 65% / 150px, url(assets/green-squiggles.svg) no-repeat 20% 20% / 200px;
 }
 
 .wrapper {
@@ -30,6 +30,7 @@ main {
 h1 {
     font-size: 6rem;
     line-height: 1;
+    color: #E76F51;
 }
 
 h2 {
@@ -42,7 +43,8 @@ p {
 }
 
 .wreath {
-    width:450px;
+    width: 450px;
+    opacity: 70%;
 }
 
 .bottom-wreath {
@@ -60,7 +62,7 @@ img {
 }
 
 footer {
-    background: #F4A261;
+    background: #F4A261 url(assets/green-squiggles.svg) no-repeat 00% 80% / 400px;
 }
 
 .flex-container {
@@ -72,6 +74,13 @@ footer {
 .contact-logo {
     width: 60px;
     height: 60px;
+    transform: scale(1.0);
+    transition: all 0.15s ease-in-out;
+}
+
+.contact-logo:hover, .contact-logo:focus, .contact-logo:active {
+    transform: scale(1.05);
+    transition: all 0.15s ease-in-out;
 }
 
 .footer-grid {

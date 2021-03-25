@@ -30,9 +30,9 @@ main {
 h1 {
     font-size: 6rem;
     line-height: 1;
-    /* color: #E76F51; */
-      background: -webkit-linear-gradient(#f8ac6e, #fa882a);
-      background-clip: text;
+    color: #E76F51;
+    background: -webkit-linear-gradient(#f8ac6e, #E76F51);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -66,7 +66,7 @@ img {
 }
 
 footer {
-    background: #F4A261 url(assets/green-squiggles.svg) no-repeat 00% 80% / 400px;
+    background: #F4A261 url(assets/green-squiggles.svg) no-repeat 00% 90% / 400px;
 }
 
 .flex-container {

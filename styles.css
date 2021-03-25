@@ -30,7 +30,11 @@ main {
 h1 {
     font-size: 6rem;
     line-height: 1;
-    color: #E76F51;
+    /* color: #E76F51; */
+      background: -webkit-linear-gradient(#f8ac6e, #fa882a);
+      background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {

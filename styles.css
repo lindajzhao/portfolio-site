@@ -41,8 +41,13 @@ p {
     font-size: 2rem;
 }
 
+.wreath {
+    width:450px;
+}
+
 .bottom-wreath {
     transform: scale(-1);
+    margin-top: 35px;
 }
 
 em {
@@ -93,6 +98,11 @@ footer {
         font-size: 2.4rem;
         margin: 0 0 1rem 0;
     }
+
+    .wreath {
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 1000px) {

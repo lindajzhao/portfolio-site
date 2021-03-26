@@ -2,10 +2,17 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+:root {
+  --bg-color: #032b49;
+  --light-orange: #ffdf91;
+  --med-orange: #f8ac6e;
+  --dark-orange: #E76F51;
+  --green: #80ad18;
+}
+
 body {
-    font-size: 62.5%;
     min-height: 100vh;
-    background: #04375d;
+    background-color: var(--bg-color);
     font-family: "Montserrat", sans-serif;
     font-size: 3.3rem;
     font-weight: 700;
@@ -13,7 +20,7 @@ body {
 }
 
 main {
-    color: #ffdf91;
+    color: var(--light-orange);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -30,11 +37,6 @@ main {
 h1 {
     font-size: 6rem;
     line-height: 1;
-    color: #E76F51;
-    background: -webkit-linear-gradient(#f8ac6e, #E76F51);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 h2 {
@@ -46,18 +48,22 @@ p {
     font-size: 2rem;
 }
 
-.wreath {
-    width: 450px;
-    opacity: 70%;
+.gradient-text {
+    color: var(--dark-orange);
+    background: -webkit-linear-gradient(var(--med-orange), var(--dark-orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.bottom-wreath {
-    transform: scale(-1);
-    margin-top: 35px;
+.color-swatches {
+    height: 3px;
+    width: 100%;
+    background: rgb(231,111,81);
+    background: linear-gradient(90deg, var(--light-orange) 25%, rgba(0, 0, 0, 0) 25%), linear-gradient(90deg, var(--green) 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(90deg, var(--dark-orange) 75%, var(--med-orange) 75%);  
 }
 
 em {
-  color: #E76F51;
+  color: var(--dark-orange);
   font-style: normal;
 }
 
@@ -66,7 +72,7 @@ img {
 }
 
 footer {
-    background: #F4A261 url(assets/green-squiggles.svg) no-repeat 00% 90% / 400px;
+    background: var(--med-orange) url(assets/green-squiggles.svg) no-repeat 00% 90% / 400px;
 }
 
 .flex-container {
